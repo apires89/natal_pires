@@ -1,0 +1,126 @@
+body {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9InhtYXMiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCI+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjZmZmZmZmIi8+PGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMTAiIGZpbGw9IiNmZjAwMDAiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjWG1hcykiLz48L3N2Zz4=");
+  font-family: "Comic Sans MS", cursive;
+  color: #00FF00;
+  text-align: center;
+}
+
+@keyframes blinker {
+  50% { opacity: 0; }
+}
+
+@keyframes rainbow {
+  0% { color: red; }
+  20% { color: orange; }
+  40% { color: yellow; }
+  60% { color: green; }
+  80% { color: blue; }
+  100% { color: purple; }
+}
+
+.blink {
+  animation: blinker 1s linear infinite;
+}
+
+.rainbow {
+  animation: rainbow 2s linear infinite;
+}
+
+.attention {
+  color: red;
+}
+
+.event-time {
+  border: 5px solid pink;
+  background-color: pink;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 500px;
+}
+
+.divider {
+  width: 75%;
+  border: 2px solid red;
+}
+
+.divider-green {
+  width: 50%;
+  border: 2px solid green;
+}
+
+.bring-list {
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    margin: 10px 0;
+  }
+}
+
+.schedule {
+  background-color: yellow;
+  padding: 20px;
+  border: 5px dashed red;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 500px;
+
+  h2 {
+    color: blue;
+  }
+}
+
+.emoji-row {
+  font-size: 30px;
+}
+
+.confirmation {
+  background-color: #FF69B4;
+  padding: 10px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 500px;
+}
+
+.hohoho {
+  color: red;
+}
+
+.directions {
+  background-color: #90EE90;
+  padding: 15px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 500px;
+}
+
+.reminder {
+  color: red;
+}
+
+.thanks {
+  border: 3px dotted blue;
+  padding: 10px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 500px;
+
+  p {
+    font-size: 20px;
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .schedule,
+  .confirmation,
+  .directions,
+  .thanks,
+  .event-time {
+    width: 95%;
+  }
+
+  .emoji-row {
+    font-size: 24px;
+  }
+}
